@@ -7,7 +7,7 @@
         <mxCell id="wFmhuJEVl1vUYz8ObK_X-1" value="upbit server" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="80" y="160" width="160" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="wFmhuJEVl1vUYz8ObK_X-2" value="api_websocket.py" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="wFmhuJEVl1vUYz8ObK_X-2" value="data_streaming.py&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;api_websocket.py&lt;/div&gt;&lt;div&gt;api_quotation.py&lt;/div&gt;&lt;div&gt;api_request.py&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="320" y="160" width="160" height="80" as="geometry" />
         </mxCell>
         <mxCell id="wFmhuJEVl1vUYz8ObK_X-3" value="data_realtime" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
@@ -23,6 +23,50 @@
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="390" y="360" as="sourcePoint" />
             <mxPoint x="440" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wFmhuJEVl1vUYz8ObK_X-11" value="sorting_worker.py&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;api_quotation.py&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="320" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wFmhuJEVl1vUYz8ObK_X-12" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="wFmhuJEVl1vUYz8ObK_X-11" target="wFmhuJEVl1vUYz8ObK_X-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="360" as="sourcePoint" />
+            <mxPoint x="440" y="310" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="400" y="280" />
+              <mxPoint x="620" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wFmhuJEVl1vUYz8ObK_X-13" value="data_translate_1s" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="560" y="320" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wFmhuJEVl1vUYz8ObK_X-14" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="wFmhuJEVl1vUYz8ObK_X-11" target="wFmhuJEVl1vUYz8ObK_X-13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="480" y="260" as="sourcePoint" />
+            <mxPoint x="560" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wFmhuJEVl1vUYz8ObK_X-15" value="prediction_worker.py" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="480" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wFmhuJEVl1vUYz8ObK_X-16" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="wFmhuJEVl1vUYz8ObK_X-15" target="wFmhuJEVl1vUYz8ObK_X-13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="370" y="550" as="sourcePoint" />
+            <mxPoint x="600" y="430" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="400" y="440" />
+              <mxPoint x="620" y="440" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wFmhuJEVl1vUYz8ObK_X-17" value="data_prediction" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="560" y="480" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wFmhuJEVl1vUYz8ObK_X-18" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="wFmhuJEVl1vUYz8ObK_X-15" target="wFmhuJEVl1vUYz8ObK_X-17">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="480" y="420" as="sourcePoint" />
+            <mxPoint x="560" y="420" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
