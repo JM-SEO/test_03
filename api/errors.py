@@ -1,4 +1,5 @@
 # api/errors.py
+
 from requests import Response
 from typing import Dict, Any, Callable
 
